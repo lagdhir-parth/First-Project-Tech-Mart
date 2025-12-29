@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="admin.css" />
+    <link rel="stylesheet" href="dash.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="panel">
+        <div class="admin-info">
+          <a href="admin-dash.html">
+            <i class="fa-solid fa-user-shield profile-logo"></i>
+            <span>Lagdhir Parth</span>
+            <i class="fa-solid fa-caret-down"></i>
+          </a>
+        </div>
+        <div class="menu">
+          <a class="menu-item dash-op" href="admin-dash.html">
+            <i class="icon fa-solid fa-gauge"></i>
+            <p>Dashboard</p>
+          </a>
+          <a class="menu-item users-op" href="../Admin-user/admin-user.html">
+            <i class="icon fa-solid fa-users"></i>
+            <p>Users</p>
+          </a>
+          <a class="menu-item product-op" href="../Product/admin-products.html">
+            <i class="icon fa-solid fa-box"></i>
+            <p>Products</p>
+          </a>
+          <a class="menu-item order-op" href="../Order/admin-orders.html">
+            <i class="icon fa-solid fa-list"></i>
+            <p>Orders</p>
+          </a>
+          <a
+            class="menu-item setting-op"
+            href="../Admin-setting/admin-set.html"
+          >
+            <i class="fa-solid fa-cog"></i>
+            <p>Settings</p>
+          </a>
+        </div>
+        <a class="logout" href="../../index.html">
+          <i class="icon fa-solid fa-right-from-bracket"></i>
+          <p>Logout</p>
+        </a>
+      </div>
+
+      <div class="nav">
+        <div class="nav-menu">
+          <a class="notification" href="#">
+            <i class="fa-solid fa-bell"></i>
+            <span class="badge">3</span>
+          </a>
+          <a class="message" href="#">
+            <i class="fa-solid fa-message"></i>
+            <span class="badge">7</span>
+          </a>
+        </div>
+        <div class="searchBar">
+          <input type="text" placeholder="What are you looking for?" />
+          <div class="search">
+            <div class="search-icon">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+          </div>
+        </div>
+        <a class="logo-container" href="#"><div class="logo"></div></a>
+      </div>
+
+      <div class="content">
+        <div class="tCard-container">
+          <div class="top-card">
+            <h5 class="card-title">Total Users</h5>
+            <div class="card-content">
+              <p><i class="fa-solid fa-users"></i></p>
+              <p>1,234</p>
+            </div>
+          </div>
+          <div class="top-card">
+            <h5 class="card-title">Total Products</h5>
+            <div class="card-content">
+              <p><i class="fa-solid fa-inbox"></i></p>
+              <p>10</p>
+            </div>
+          </div>
+          <div class="top-card">
+            <h5 class="card-title">Pending Orders</h5>
+            <div class="card-content">
+              <p><i class="fa-regular fa-clock"></i></p>
+              <p>1,234</p>
+            </div>
+          </div>
+          <div class="top-card">
+            <h5 class="card-title">Order Recieved</h5>
+            <div class="card-content">
+              <p><i class="fa-solid fa-cart-arrow-down"></i></p>
+              <p>1,234</p>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-content">
+          <div class="con1">
+            <h4 style="padding-top: 20px; padding-left: 20px">
+              Recent Orders:
+            </h4>
+            <table
+              style="
+                width: 90%;
+                margin: 20px auto;
+                border-collapse: collapse;
+                text-align: center;
+                font-size: 25px;
+              "
+              border="1px solid black"
+            >
+              <tr>
+                <th>Order ID</th>
+                <th>Customer</th>
+                <th>Date</th>
+                <th>Status</th>
+                <th>Total</th>
+              </tr>
+              <tr>
+                <td>001</td>
+                <td>John Doe</td>
+                <td>2023-10-01</td>
+                <td>Completed</td>
+                <td>$150.00</td>
+              </tr>
+              <tr>
+                <td>002</td>
+                <td>Jane Smith</td>
+                <td>2023-10-02</td>
+                <td>Pending</td>
+                <td>$200.00</td>
+              </tr>
+              <tr>
+                <td>003</td>
+                <td>Mike Johnson</td>
+                <td>2023-10-03</td>
+                <td>Shipped</td>
+                <td>$300.00</td>
+              </tr>
+              <tr>
+                <td>004</td>
+                <td>Emily Davis</td>
+                <td>2023-10-04</td>
+                <td>Cancelled</td>
+                <td>$120.00</td>
+              </tr>
+              <tr>
+                <td>005</td>
+                <td>Chris Brown</td>
+                <td>2023-10-05</td>
+                <td>Completed</td>
+                <td>$180.00</td>
+              </tr>
+              <tr>
+                <td>006</td>
+                <td>Sarah Wilson</td>
+                <td>2023-10-06</td>
+                <td>Pending</td>
+                <td>$220.00</td>
+              </tr>
+              <tr>
+                <td>007</td>
+                <td>David Lee</td>
+                <td>2023-10-07</td>
+                <td>Shipped</td>
+                <td>$350.00</td>
+              </tr>
+              <tr>
+                <td>008</td>
+                <td>Amy Taylor</td>
+                <td>2023-10-08</td>
+                <td>Completed</td>
+                <td>$400.00</td>
+              </tr>
+              <tr>
+                <td>009</td>
+                <td>James Anderson</td>
+                <td>2023-10-09</td>
+                <td>Cancelled</td>
+                <td>$130.00</td>
+              </tr>
+              <tr>
+                <td>010</td>
+                <td>Linda Martinez</td>
+                <td>2023-10-10</td>
+                <td>Completed</td>
+                <td>$250.00</td>
+              </tr>
+            </table>
+          </div>
+
+          <div class="con2">
+            <h4 style="padding-top: 20px; padding-left: 20px">Products:</h4>
+            <table
+              style="
+                width: 90%;
+                margin: 20px auto;
+                border-collapse: collapse;
+                text-align: center;
+                font-size: 25px;
+              "
+              border="1px solid black"
+            >
+              <tr>
+                <th>P_ID</th>
+                <th>Name</th>
+                <th>Price</th>
+              </tr>
+              <tr>
+                <td>101</td>
+                <td>Product A</td>
+                <td>$50.00</td>
+              </tr>
+              <tr>
+                <td>102</td>
+                <td>Product B</td>
+                <td>$75.00</td>
+              </tr>
+              <tr>
+                <td>103</td>
+                <td>Product C</td>
+                <td>$100.00</td>
+              </tr>
+              <tr>
+                <td>104</td>
+                <td>Product D</td>
+                <td>$120.00</td>
+              </tr>
+              <tr>
+                <td>105</td>
+                <td>Product E</td>
+                <td>$80.00</td>
+              </tr>
+              <tr>
+                <td>106</td>
+                <td>Product F</td>
+                <td>$90.00</td>
+              </tr>
+              <tr>
+                <td>107</td>
+                <td>Product G</td>
+                <td>$110.00</td>
+              </tr>
+              <tr>
+                <td>108</td>
+                <td>Product H</td>
+                <td>$130.00</td>
+              </tr>
+              <tr>
+                <td>109</td>
+                <td>Product I</td>
+                <td>$140.00</td>
+              </tr>
+              <tr>
+                <td>110</td>
+                <td>Product J</td>
+                <td>$160.00</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="admin-script.js"></script>
+    <script src="dash.js"></script>
+  </body>
+</html>

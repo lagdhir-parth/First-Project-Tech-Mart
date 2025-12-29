@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../Dashboard/admin.css">
+    <link rel="stylesheet" href="setting.css">
+</head>
+<body>
+    <div class="container">
+        <div class="panel">
+            <div class="admin-info">
+                <a href="../Dashboard/admin-dash.html">
+                    <i class="fa-solid fa-user-shield profile-logo"></i>
+                    <span>Lagdhir Parth</span>
+                    <i class="fa-solid fa-caret-down"></i>
+                </a>
+            </div>
+            <div class="menu">
+                <a class="menu-item dash-op" href="../Dashboard/admin-dash.html">
+                        <i class="icon fa-solid fa-gauge"></i>
+                        <p>Dashboard</p>
+                </a>
+                <a class="menu-item users-op" href="../Admin-user/admin-user.html">
+                        <i class="icon fa-solid fa-users"></i>
+                        <p>Users</p>
+                </a>
+                <a class="menu-item product-op" href="../Product/admin-products.html">
+                        <i class="icon fa-solid fa-box"></i>
+                        <p>Products</p>
+                </a>
+                <a class="menu-item order-op" href="../Order/admin-orders.html">
+                        <i class="icon fa-solid fa-list"></i>
+                        <p>Orders</p>
+                </a>
+                <a class="menu-item setting-op" href="../Admin-setting/admin-set.html">
+                        <i class="fa-solid fa-cog"></i>
+                        <p>Settings</p>
+                </a>
+            </div>
+            <a class="logout" href="../../index.html">
+                    <i class="icon fa-solid fa-right-from-bracket"></i>
+                    <p>Logout</p>
+            </a>
+        </div>
+
+        <div class="nav">
+            <div class="nav-menu">
+                <a class="notification" href="#">
+                    <i class="fa-solid fa-bell"></i>
+                    <span class="badge">3</span>
+                </a>
+                <a class="message" href="#">
+                    <i class="fa-solid fa-message"></i>
+                    <span class="badge">7</span>
+                </a>
+            </div>
+            <div class="searchBar">
+                <input type="text" placeholder="What are you looking for?">
+                <div class="search">
+                    <div class="search-icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+            </div>
+            <a class="logo-container" href="#"><div class="logo"></div></a>
+        </div>
+
+        <di class="content">
+            <div class="side-panel">
+                <ul>
+                    <li id="edit-profile"><a href="#">Edit Profile</a></li>
+                    <li><a href="#">Website Preferences</a></li>
+                    <li><a href="#">Product Settings</a></li>
+                    <li><a href="#">Theme & Appearance</a></li>
+                </ul>
+            </div>
+            <div class="main-content">
+                <h1 class="head">Edit Profile</h1>
+                <hr>
+                <div class="form">
+                    <form>
+                        <div class="username">
+                            <label for="u-name">Change Username:</label><input type="text" class="up-username" name="u-name" placeholder="New Username"/>
+                        </div>
+                        <div class="pass">
+                            <label>Change Password:</label><input type="password" class="up-password" placeholder="New password"/>
+                        </div>
+                        <div class="conf-pass">
+                            <label>Confirm Password:</label><input type="password" class="up-password" placeholder="confirm password"/>
+                        </div>
+                        <div class="m-num">
+                            <label>Change Mobile number:</label><input type="text" class="up-mobile" placeholder="Change mobile number"/>
+                        </div>
+                        <div class="btns">
+                            <input type="submit" value="Save"/>
+                            <button>Clear</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../Dashboard/admin-script.js"></script>
+</body>
+</html>
